@@ -1,0 +1,247 @@
+/* General styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  height: 100%;
+}
+
+a {
+  color: #14c871;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #206bfb;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Header styles */
+#header {
+  background-color: #252525;
+  transition: all 0.5s;
+  padding: 20px 0;
+}
+
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+}
+
+#header .logo {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.navbar a {
+  font-size: 16px;
+  padding: 10px 30px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: #16df7e;
+}
+
+.navbar a.active {
+  color: #14c871;  
+  font-weight: bold; 
+}
+
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+    color: #5f687b;
+    font-size: 28px;
+    line-height: 0;
+    cursor: pointer;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+/*Sections Styling*/
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f9f9fa;
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5f687b;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 30px;
+  color: #f0f1f3;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .section-title span {
+    font-size: 38px;
+  }
+}
+
+
+/* Main Styling */
+.JMS {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Hero Section */
+#hero {
+  background: #fff;
+  padding-top: 82px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  color: #3e4450;
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #252525;;
+  color: #5f687b;
+  font-size: 14px;
+  position: fixed;
+}
+
+#footer .footer-top {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 80px 0;
+}
+
+#footer .footer-top .social-links {
+  margin-top: 30px;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #eaecef;
+  color: #5f687b;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #16df7e;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-bottom {
+  border-top: 1px solid #d9dce2;
+  z-index: 2;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer .copyright {
+  float: left;
+}
+
+/* Sources Styles */
+.source-links {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling on overflow */
+  width: 100%; /* Full width to spread out the items */
+  padding: 20px 0; /* Padding to increase visibility */
+}
+
+.source-item {
+  flex: 0 0 auto; /* Do not grow or shrink, maintain the size of the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc; /* Increased border thickness for visibility */
+  border-radius: 8px;
+  padding: 20px; /* Increased padding for better layout */
+  background-color: #f4f4f4; /* Light grey background */
+  min-width: 150px; /* Minimum width to ensure visibility */
+  min-height: 150px; /* Minimum height to match width and form a square */
+}
+
+.source-item img {
+  max-width: 100%; /* Ensures image fits within the container */
+  max-height: 100px; /* Limit the height of images */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title h2 {
+    font-size: 28px;
+  }
+}
